@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 
 function Header() {
   return (
@@ -12,7 +11,7 @@ function Header() {
           Lekan Dar <br /> <span>I build things for the web.</span>
         </h1>
         <p>
-          I'm a design-minded <span>Front-End Software Engineer</span> &{" "}
+          I'm a design-minded <span>Front-End Software Engineer</span> &
           <span>Product Designer</span> <br /> focused on building beautiful
           interfaces & experiences <Emoji>👨‍💻</Emoji>
         </p>
