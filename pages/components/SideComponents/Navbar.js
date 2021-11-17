@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 function Navbar() {
   return (
     <Heading>
-      <Image src="/D.png" width={100} height={100} />
+      <Image src="/D.png" width={100} height={100} alt = "Logo"/>
       <Link>
         <ul>
           <li>
