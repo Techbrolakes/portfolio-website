@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 function About() {
   return (
@@ -16,25 +22,81 @@ function About() {
         <AboutContent>
           <AboutParagraph>
             <p>
-              Hello! My name is Lekan and I enjoy creating things that live on
-              the internet. My interest in web development started back in 2012
-              when I decided to try editing custom Tumblr themes — turns out
-              hacking together a custom reblog button taught me a lot about HTML
-              & CSS!
+              Hello! My name is Lekan and I enjoy
+              <span> creating and designing things </span>
+              that live on the internet. I'm also a student of
+              <span> Geology</span> at the
+              <span> University of Lagos, Nigeria.</span>
             </p>
             <p>
-              I have experience working remotely building meaningful and
-              productive software with also the ability to work with minimal
-              supervision as I have the zeal to tackle any problems I might
-              encounter independently to achieve the desired result.
+              I have experience working remotely building
+              <span> meaningful and productive software </span> with also the
+              ability to work with minimal supervision as I have the zeal to
+              tackle any problems I might encounter independently to achieve the
+              desired result.
             </p>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS!
+              Here are a few <span>technologies</span> I’ve been working with
+              recently:
             </p>
+            <ListContainer>
+              <div>
+                <List>
+                  <ListItem disablePadding>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
+                      </ListItemIcon>
+                      <ListItemText primary="Javascript (ES6+)" />
+                    </ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
+                      </ListItemIcon>
+                      <ListItemText primary="React" />
+                    </ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
+                      </ListItemIcon>
+                      <ListItemText primary="Node js" />
+                    </ListItemButton>
+                  </ListItem>
+                </List>
+              </div>
+              <div>
+                <List>
+                  <ListItem disablePadding>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
+                      </ListItemIcon>
+                      <ListItemText primary="Vue Js" />
+                    </ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
+                      </ListItemIcon>
+                      <ListItemText primary="Figma" />
+                    </ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
+                      </ListItemIcon>
+                      <ListItemText primary="Webflow" />
+                    </ListItemButton>
+                  </ListItem>
+                </List>
+              </div>
+            </ListContainer>
           </AboutParagraph>
           <AboutImage>
             <Image src="/lekan2.jpg" width={1200} height={1400} alt="Lekan" />
@@ -51,7 +113,11 @@ const AboutContainer = styled.div`
   color: #fff;
   padding: 1rem 3rem;
   font-family: "lato";
+  span {
+    color: rgb(100, 255, 218);
+  }
 `;
+
 const AboutHeading = styled.div`
   display: flex;
   align-items: center;
@@ -99,4 +165,7 @@ const AboutImage = styled.div`
 const Line = styled.div`
   width: 400px;
   border-bottom: 0.3px groove #8892b0;
+`;
+const ListContainer = styled.div`
+  display: flex;
 `;
