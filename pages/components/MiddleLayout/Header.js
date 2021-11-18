@@ -12,7 +12,7 @@ function Header() {
         </h1>
         <p>
           I&rsquo;m a design-minded <span>Front-End Software Engineer</span> &
-          <span>Product Designer</span> <br /> focused on building beautiful
+          <span> Product Designer</span> <br /> focused on building beautiful
           interfaces & experiences <Emoji>👨‍💻</Emoji>
         </p>
         <Button variant="contained" size="large">
