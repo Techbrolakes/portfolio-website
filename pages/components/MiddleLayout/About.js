@@ -24,7 +24,7 @@ function About() {
             <p>
               Hello! My name is Lekan and I enjoy
               <span> creating and designing things </span>
-              that live on the internet. I'm also a student of
+              that live on the internet. I&rsquo;m also a student of
               <span> Geology</span> at the
               <span> University of Lagos, Nigeria.</span>
             </p>
@@ -36,8 +36,8 @@ function About() {
               desired result.
             </p>
             <p>
-              Here are a few <span>technologies</span> I’ve been working with
-              recently:
+              Here are a few <span>technologies</span> I&rsquo;ve been working
+              with recently:
             </p>
             <ListContainer>
               <div>
