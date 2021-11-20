@@ -57,7 +57,6 @@ const MiddleLayout = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  cursor: pointer;
   width: 1050px;
   height: 550vh;
   @media all and (min-width: 320px) and (max-width: 600px) {
