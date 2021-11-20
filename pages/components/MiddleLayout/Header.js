@@ -40,7 +40,7 @@ const Heading = styled.div`
     margin: 0;
 
     @media all and (min-width: 320px) and (max-width: 600px) {
-      font-size: 20px;
+      font-size: 26px;
       text-align: center;
     }
 

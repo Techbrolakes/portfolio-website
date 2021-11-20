@@ -61,7 +61,7 @@ const MiddleLayout = styled.div`
   width: 1050px;
   height: 550vh;
   @media all and (min-width: 320px) and (max-width: 600px) {
-    width: 350px;
+    width: 100%;
   }
 `;
 const EmailSection = styled.div`

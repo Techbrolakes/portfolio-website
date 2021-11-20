@@ -116,6 +116,9 @@ const AboutContainer = styled.div`
   span {
     color: rgb(100, 255, 218);
   }
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    padding: 10px;
+  }
 `;
 
 const AboutHeading = styled.div`
@@ -124,6 +127,10 @@ const AboutHeading = styled.div`
   h1 {
     color: #ccd6f6;
     margin-right: 20px;
+
+    @media all and (min-width: 320px) and (max-width: 600px) {
+      font-size: 20px;
+    }
   }
   span {
     color: rgb(100, 255, 218);
@@ -132,6 +139,10 @@ const AboutHeading = styled.div`
 const AboutContent = styled.div`
   display: flex;
   justify-content: space-between;
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const AboutParagraph = styled.div`
   color: #fff;
@@ -140,6 +151,9 @@ const AboutParagraph = styled.div`
     color: #8892b0;
     font-size: 20px;
     line-height: 26px;
+    @media all and (min-width: 320px) and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 `;
 const AboutImage = styled.div`
@@ -165,7 +179,14 @@ const AboutImage = styled.div`
 const Line = styled.div`
   width: 400px;
   border-bottom: 0.3px groove #8892b0;
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    width: 150px;
+  }
 `;
 const ListContainer = styled.div`
   display: flex;
+
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
