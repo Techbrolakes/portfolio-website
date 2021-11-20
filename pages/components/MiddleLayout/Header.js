@@ -26,8 +26,6 @@ function Header() {
 export default Header;
 
 const Heading = styled.div`
-  cursor: pointer;
-
   h3 {
     color: rgb(100, 255, 218);
     letter-spacing: 2px;

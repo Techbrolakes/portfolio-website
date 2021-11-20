@@ -47,7 +47,7 @@ function About() {
                       <ListItemIcon>
                         <ArrowRightIcon style={{ color: "#ccd6f6" }} />
                       </ListItemIcon>
-                      <ListItemText primary="Javascript (ES6+)" dense />
+                      <ListItemText primary="Javascript (ES6+)" dense="true" />
                     </ListItemButton>
                   </ListItem>
                   <ListItem disablePadding>
@@ -91,7 +91,7 @@ function About() {
                       <ListItemIcon>
                         <ArrowRightIcon style={{ color: "#ccd6f6" }} />
                       </ListItemIcon>
-                      <ListItemText primary="Webflow" dense />
+                      <ListItemText primary="Webflow" dense="true" />
                     </ListItemButton>
                   </ListItem>
                 </List>
