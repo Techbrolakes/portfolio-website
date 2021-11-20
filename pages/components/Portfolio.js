@@ -60,6 +60,9 @@ const MiddleLayout = styled.div`
   cursor: pointer;
   width: 1050px;
   height: 550vh;
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    width: 350px;
+  }
 `;
 const EmailSection = styled.div`
   color: white;

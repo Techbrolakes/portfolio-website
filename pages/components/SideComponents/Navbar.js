@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 function Navbar() {
   return (
     <Heading>
-      <Image src="/D.png" width={100} height={100} alt = "Logo"/>
+      <Image src="/D.png" width={100} height={100} alt="Logo" />
       <Link>
         <ul>
           <li>
@@ -56,5 +56,8 @@ const Link = styled.div`
     color: #ccd6f6;
     list-style: none;
     margin: 0 12px;
+  }
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    display: none;
   }
 `;

@@ -41,6 +41,10 @@ const Links = styled.div`
   justify-content: space-between;
   align-items: center;
   color: #ccd6f6;
+
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const LineOne = styled.div`

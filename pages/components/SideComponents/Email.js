@@ -31,4 +31,7 @@ const EmailBar = styled.div`
   h3 {
     margin-right: 20px;
   }
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    display: none;
+  }
 `;
