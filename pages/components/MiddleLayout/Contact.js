@@ -18,10 +18,10 @@ function Contact() {
         <ContactDetails>
           <ContactInformation>
             <h1>Contact Information</h1>
-            <p>
+            <h4>
               My inbox is always open. Whether you have a question or just want
               to say hi, I’ll try my best to get back to you!
-            </p>
+            </h4>
           </ContactInformation>
           <ContactForm>
             <Button variant="contained" size="large">
@@ -55,14 +55,28 @@ const ContactHeading = styled.div`
   h1 {
     color: #ccd6f6;
     margin-right: 20px;
+
+    @media all and (min-width: 320px) and (max-width: 600px) {
+      font-size: 20px;
+      justify-content: center;
+    }
   }
   span {
     color: rgb(100, 255, 218);
+  }
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 const Line = styled.div`
   width: 400px;
   border-bottom: 0.3px groove #8892b0;
+
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    width: 150px;
+    border-bottom: 2px groove rgb(100, 255, 218);
+  }
 `;
 const ContactContainer = styled.div`
   display: flex;
@@ -75,15 +89,17 @@ const ContactDetails = styled.div`
   width: 900px;
   background: #112240;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    width: 100%;
+    background: none;
+    box-shadow: none;
+  }
 `;
 const ContactInformation = styled.div`
   flex: 1;
   color: #fff;
 
   h1 {
-    text-align: center;
-  }
-  p {
     text-align: center;
   }
 `;

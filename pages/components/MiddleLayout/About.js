@@ -1,13 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-
+import FingerprintIcon from "@mui/icons-material/Fingerprint";
 function About() {
   return (
     <div>
@@ -40,62 +34,37 @@ function About() {
               with recently:
             </p>
             <ListContainer>
-              <div>
-                <List>
-                  <ListItem disablePadding>
-                    <ListItemButton>
-                      <ListItemIcon>
-                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
-                      </ListItemIcon>
-                      <ListItemText primary="Javascript (ES6+)" dense="true" />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
-                      <ListItemIcon>
-                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
-                      </ListItemIcon>
-                      <ListItemText primary="React" />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
-                      <ListItemIcon>
-                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
-                      </ListItemIcon>
-                      <ListItemText primary="Node js" />
-                    </ListItemButton>
-                  </ListItem>
-                </List>
-              </div>
-              <div>
-                <List>
-                  <ListItem disablePadding>
-                    <ListItemButton>
-                      <ListItemIcon>
-                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
-                      </ListItemIcon>
-                      <ListItemText primary="Vue Js" />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
-                      <ListItemIcon>
-                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
-                      </ListItemIcon>
-                      <ListItemText primary="Figma" />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
-                      <ListItemIcon>
-                        <ArrowRightIcon style={{ color: "#ccd6f6" }} />
-                      </ListItemIcon>
-                      <ListItemText primary="Webflow" dense="true" />
-                    </ListItemButton>
-                  </ListItem>
-                </List>
-              </div>
+              <ListItemsOne>
+                <ul>
+                  <li>
+                    <FingerprintIcon /> Javascript
+                  </li>
+                  <li>
+                    <FingerprintIcon />
+                    Node Js
+                  </li>
+                  <li>
+                    <FingerprintIcon />
+                    Webflow
+                  </li>
+                </ul>
+              </ListItemsOne>
+              <ListItemsTwo>
+                <ul>
+                  <li>
+                    <FingerprintIcon />
+                    React
+                  </li>
+                  <li>
+                    <FingerprintIcon />
+                    Vue Js
+                  </li>
+                  <li>
+                    <FingerprintIcon />
+                    Figma
+                  </li>
+                </ul>
+              </ListItemsTwo>
             </ListContainer>
           </AboutParagraph>
           <AboutImage>
@@ -130,10 +99,15 @@ const AboutHeading = styled.div`
 
     @media all and (min-width: 320px) and (max-width: 600px) {
       font-size: 20px;
+      justify-content: center;
     }
   }
   span {
     color: rgb(100, 255, 218);
+  }
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 const AboutContent = styled.div`
@@ -153,12 +127,12 @@ const AboutParagraph = styled.div`
     line-height: 26px;
     @media all and (min-width: 320px) and (max-width: 600px) {
       font-size: 16px;
+      text-align: center;
     }
   }
 `;
 const AboutImage = styled.div`
   margin: 0 50px;
-  cursor: pointer;
   object-fit: cover;
   opacity: 0.99;
   transition: all ease-in 0.5s;
@@ -175,18 +149,69 @@ const AboutImage = styled.div`
     height: 80%;
     z-index: -1;
   }
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+
+    ::after {
+      content: "";
+      position: absolute;
+      left: 2rem;
+      top: 1rem;
+      border: 4px solid #64ffda;
+      width: 100%;
+      height: 85%;
+      z-index: -1;
+    }
+  }
 `;
 const Line = styled.div`
   width: 400px;
   border-bottom: 0.3px groove #8892b0;
+
   @media all and (min-width: 320px) and (max-width: 600px) {
     width: 150px;
+    border-bottom: 2px groove rgb(100, 255, 218);
   }
 `;
 const ListContainer = styled.div`
   display: flex;
+  width: 400px;
+  color: rgb(100, 255, 218);
+
+  font-size: 21px;
 
   @media all and (min-width: 320px) and (max-width: 600px) {
     font-size: 16px;
+  }
+`;
+const ListItemsOne = styled.div`
+  li {
+    display: flex;
+    margin: 10px;
+    color: rgb(100, 255, 218);
+
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+
+    @media all and (min-width: 320px) and (max-width: 600px) {
+      width: 100px;
+    }
+  }
+`;
+const ListItemsTwo = styled.div`
+  li {
+    color: rgb(100, 255, 218);
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @media all and (min-width: 320px) and (max-width: 600px) {
+      width: 100%;
+    }
   }
 `;

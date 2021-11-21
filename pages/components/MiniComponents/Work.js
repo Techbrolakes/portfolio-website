@@ -52,6 +52,10 @@ export default Work;
 const ProjectSection = styled.div`
   display: flex;
   padding: 30px 15px;
+
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 const ProjectImage = styled.div`
   height: 400px;
@@ -65,6 +69,15 @@ const ProjectImage = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    background: ${(props) => `url("/${props.bgImage}")`};
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 `;
 const ProjectDetails = styled.div`
   display: flex;
@@ -79,6 +92,9 @@ const ProjectHead = styled.div`
   h1 {
     color: #ccd6f6;
   }
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    text-align: center;
+  }
 `;
 const ProjectDescription = styled.div`
   margin-left: -100px;
@@ -91,16 +107,33 @@ const ProjectDescription = styled.div`
     color: #ccd6f6;
     line-height: 1.6;
   }
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    margin: 0 5px;
+  }
 `;
 const ProjectTools = styled.div`
   ul {
     display: flex;
     justify-content: space-between;
+
+    @media all and (min-width: 320px) and (max-width: 600px) {
+      width: 100%;
+      align-items: center;
+      margin-left: -20px;
+      li {
+        margin: 0.2px;
+        text-align: center;
+      }
+    }
   }
 `;
 const ProjectLinks = styled.div`
   text-align: right;
   color: #ccd6f6;
+
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    text-align: center;
+  }
 
   span {
     padding: 10px;

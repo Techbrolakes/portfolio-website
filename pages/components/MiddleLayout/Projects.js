@@ -114,14 +114,28 @@ const ProjectHeading = styled.div`
   h1 {
     color: #ccd6f6;
     margin-right: 20px;
+
+    @media all and (min-width: 320px) and (max-width: 600px) {
+      font-size: 20px;
+      justify-content: center;
+    }
   }
   span {
     color: rgb(100, 255, 218);
+  }
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 const Line = styled.div`
   width: 400px;
   border-bottom: 0.3px groove #8892b0;
+
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    width: 150px;
+    border-bottom: 2px groove rgb(100, 255, 218);
+  }
 `;
 const ProjectShowHide = styled.div`
   display: none;
