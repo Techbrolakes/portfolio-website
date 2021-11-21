@@ -85,6 +85,7 @@ const Heading = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 60px 0;
   }
 `;
 const Emoji = styled.span`

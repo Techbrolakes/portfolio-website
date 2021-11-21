@@ -61,6 +61,7 @@ const MiddleLayout = styled.div`
   height: 550vh;
   @media all and (min-width: 320px) and (max-width: 600px) {
     width: 100%;
+    justify-content: space-between;
   }
 `;
 const EmailSection = styled.div`

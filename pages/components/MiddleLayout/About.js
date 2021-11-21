@@ -87,6 +87,7 @@ const AboutContainer = styled.div`
   }
   @media all and (min-width: 320px) and (max-width: 600px) {
     padding: 10px;
+    margin: 30px 0;
   }
 `;
 

@@ -126,6 +126,7 @@ const ProjectHeading = styled.div`
   @media all and (min-width: 320px) and (max-width: 600px) {
     flex-direction: column;
     justify-content: center;
+    margin: 40px 0;
   }
 `;
 const Line = styled.div`

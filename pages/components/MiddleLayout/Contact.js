@@ -7,7 +7,7 @@ import Image from "next/image";
 
 function Contact() {
   return (
-    <div>
+    <ContactBox>
       <ContactHeading>
         <h1>
           <span>03. </span> Get In Touch
@@ -17,7 +17,6 @@ function Contact() {
       <ContactContainer>
         <ContactDetails>
           <ContactInformation>
-            <h1>Contact Information</h1>
             <h4>
               My inbox is always open. Whether you have a question or just want
               to say hi, I’ll try my best to get back to you!
@@ -43,11 +42,17 @@ function Contact() {
           </SocialSegment>
         </ContactDetails>
       </ContactContainer>
-    </div>
+    </ContactBox>
   );
 }
 
 export default Contact;
+
+const ContactBox = styled.div`
+  @media all and (min-width: 320px) and (max-width: 600px) {
+    margin-top: 60px;
+  }
+`;
 
 const ContactHeading = styled.div`
   display: flex;
@@ -97,7 +102,8 @@ const ContactDetails = styled.div`
 `;
 const ContactInformation = styled.div`
   flex: 1;
-  color: #fff;
+  color: #ccd6f6;
+  text-align: center;
 
   h1 {
     text-align: center;
@@ -106,6 +112,8 @@ const ContactInformation = styled.div`
 const ContactForm = styled.div`
   flex: 1;
   text-align: center;
+  color: #ccd6f6;
+
   Button {
     font-family: "lato";
     font-weight: 600;
@@ -120,9 +128,11 @@ const ContactForm = styled.div`
   }
 `;
 const SocialSegment = styled.div`
-  color: #fff;
-
   text-align: center;
+
+  h4 {
+    color: #ccd6f6;
+  }
 
   span {
     padding: 10px;
