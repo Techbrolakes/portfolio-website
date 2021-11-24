@@ -29,16 +29,16 @@ function Contact() {
             <h4> Check me out on this platforms</h4>
             <IconDiv>
               <Tooltip title="Behance">
-                <i class="lab la-behance"></i>
+                <i className="lab la-behance"></i>
               </Tooltip>
               <Tooltip title="Github">
-                <i class="lab la-github"></i>
+                <i className="lab la-github"></i>
               </Tooltip>
               <Tooltip title="Dribble">
-                <i class="lab la-dribbble"></i>
+                <i className="lab la-dribbble"></i>
               </Tooltip>
               <Tooltip title="Linkedin">
-                <i class="lab la-linkedin"></i>
+                <i className="lab la-linkedin"></i>
               </Tooltip>
             </IconDiv>
           </SocialSegment>
