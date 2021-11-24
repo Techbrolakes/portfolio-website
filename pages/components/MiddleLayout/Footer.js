@@ -12,6 +12,6 @@ function Footer() {
 export default Footer;
 
 const FooterSection = styled.div`
-  color: #fff;
+  color: #ccd6f6;
   text-align: center;
 `;

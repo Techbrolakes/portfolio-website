@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
-import Image from "next/image";
+import { Tooltip } from "@mui/material";
 
 // import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
@@ -9,10 +9,8 @@ function Contact() {
   return (
     <ContactBox>
       <ContactHeading>
-        <h1>
-          <span>03. </span> Get In Touch
-        </h1>
-        <Line></Line>
+        <h3>03. What's Next</h3>
+        <h1>Get In Touch</h1>
       </ContactHeading>
       <ContactContainer>
         <ContactDetails>
@@ -23,22 +21,26 @@ function Contact() {
             </h4>
           </ContactInformation>
           <ContactForm>
-            <Button variant="contained" size="large">
+            <Button variant="contained" size="medium">
               Send me a direct email today
             </Button>
           </ContactForm>
           <SocialSegment>
             <h4> Check me out on this platforms</h4>
-            <ImageDiv>
-              <Image
-                src="/dribbble-brands.svg"
-                width={50}
-                height={50}
-                alt="dribble"
-              />
-              <span></span>
-              <Image src="/dev-brands.svg" width={50} height={50} alt="dev" />
-            </ImageDiv>
+            <IconDiv>
+              <Tooltip title="Behance">
+                <i class="lab la-behance"></i>
+              </Tooltip>
+              <Tooltip title="Github">
+                <i class="lab la-github"></i>
+              </Tooltip>
+              <Tooltip title="Dribble">
+                <i class="lab la-dribbble"></i>
+              </Tooltip>
+              <Tooltip title="Linkedin">
+                <i class="lab la-linkedin"></i>
+              </Tooltip>
+            </IconDiv>
           </SocialSegment>
         </ContactDetails>
       </ContactContainer>
@@ -56,33 +58,25 @@ const ContactBox = styled.div`
 
 const ContactHeading = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   h1 {
     color: #ccd6f6;
-    margin-right: 20px;
+    font-size: 48px;
 
     @media all and (min-width: 320px) and (max-width: 600px) {
       font-size: 20px;
       justify-content: center;
     }
   }
-  span {
+  h3 {
     color: rgb(100, 255, 218);
   }
   @media all and (min-width: 320px) and (max-width: 600px) {
-    flex-direction: column;
-    justify-content: center;
+    display: flex;
   }
 `;
-const Line = styled.div`
-  width: 400px;
-  border-bottom: 0.3px groove #8892b0;
 
-  @media all and (min-width: 320px) and (max-width: 600px) {
-    width: 150px;
-    border-bottom: 2px groove rgb(100, 255, 218);
-  }
-`;
 const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -90,10 +84,8 @@ const ContactContainer = styled.div`
   align-items: center;
 `;
 const ContactDetails = styled.div`
-  padding: 30px;
-  width: 900px;
-  background: #112240;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 700px;
+
   @media all and (min-width: 320px) and (max-width: 600px) {
     width: 100%;
     background: none;
@@ -104,10 +96,6 @@ const ContactInformation = styled.div`
   flex: 1;
   color: #ccd6f6;
   text-align: center;
-
-  h1 {
-    text-align: center;
-  }
 `;
 const ContactForm = styled.div`
   flex: 1;
@@ -118,7 +106,7 @@ const ContactForm = styled.div`
     font-family: "lato";
     font-weight: 600;
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 14px;
     color: #000;
     background: rgb(100, 255, 218);
   }
@@ -138,6 +126,11 @@ const SocialSegment = styled.div`
     padding: 10px;
   }
 `;
-const ImageDiv = styled.div`
-  color: #fff;
+const IconDiv = styled.div`
+  font-size: 32px;
+  color: #ccd6f6;
+
+  i {
+    padding: 2px;
+  }
 `;

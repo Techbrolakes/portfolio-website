@@ -4,7 +4,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsApp from "@mui/icons-material/WhatsApp";
 import Instagram from "@mui/icons-material/Instagram";
 import LinkedIn from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import { Tooltip } from "@mui/material";
 
 function SocialLinks() {
@@ -23,9 +22,7 @@ function SocialLinks() {
         <Tooltip title="LinkedIn">
           <LinkedIn />
         </Tooltip>
-        <Tooltip title="Twitter">
-          <TwitterIcon />
-        </Tooltip>
+
         <LineOne></LineOne>
       </Links>
     </div>
