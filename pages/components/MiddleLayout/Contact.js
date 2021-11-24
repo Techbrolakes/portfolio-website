@@ -9,7 +9,7 @@ function Contact() {
   return (
     <ContactBox>
       <ContactHeading>
-        <h3>03. What's Next</h3>
+        <h3>03. What&rsquo;s Next</h3>
         <h1>Get In Touch</h1>
       </ContactHeading>
       <ContactContainer>
@@ -17,7 +17,7 @@ function Contact() {
           <ContactInformation>
             <h4>
               My inbox is always open. Whether you have a question or just want
-              to say hi, I’ll try my best to get back to you!
+              to say hi, I&rsquo;ll try my best to get back to you!
             </h4>
           </ContactInformation>
           <ContactForm>
