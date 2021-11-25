@@ -110,6 +110,10 @@ const AboutHeading = styled.div`
     flex-direction: column;
     justify-content: center;
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 const AboutContent = styled.div`
   display: flex;
@@ -197,6 +201,10 @@ const Line = styled.div`
 
   @media all and (min-width: 320px) and (max-width: 600px) {
     width: 150px;
+    border-bottom: 2px groove rgb(100, 255, 218);
+  }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    width: 90px;
     border-bottom: 2px groove rgb(100, 255, 218);
   }
 `;

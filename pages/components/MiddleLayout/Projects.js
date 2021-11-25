@@ -92,19 +92,6 @@ function Projects() {
           list3="Styled Components"
           list4="Vercel"
         />
-        <Work
-          title="Tesla-Clone"
-          desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-          desc2="when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          desc3=" It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-          span1="Lorem Ipsum"
-          span2="Lekan Dar"
-          backgroundImg="tesla.png"
-          list1="Vs Code"
-          list2="React"
-          list3="Styled Components"
-          list4="Vercel"
-        />
       </ProjectShowHide>
       <ProjectButton>
         <Button variant="contained" size="large">
@@ -132,6 +119,8 @@ const ProjectHeading = styled.div`
       font-size: 20px;
       justify-content: center;
     }
+    @media all and (min-width: 601px) and (max-width: 768px) {
+    }
   }
   span {
     color: rgb(100, 255, 218);
@@ -141,6 +130,10 @@ const ProjectHeading = styled.div`
     justify-content: center;
     margin: 40px 0;
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 const Line = styled.div`
   width: 400px;
@@ -148,6 +141,10 @@ const Line = styled.div`
 
   @media all and (min-width: 320px) and (max-width: 600px) {
     width: 150px;
+    border-bottom: 2px groove rgb(100, 255, 218);
+  }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    width: 90px;
     border-bottom: 2px groove rgb(100, 255, 218);
   }
 `;
