@@ -47,7 +47,8 @@ const Heading = styled.div`
     }
     @media all and (min-width: 601px) and (max-width: 768px) {
       text-align: center;
-      font-size: 62px;
+      font-size: 52px;
+      width: 100%;
     }
 
     span {
@@ -72,7 +73,7 @@ const Heading = styled.div`
       }
     }
     @media all and (min-width: 601px) and (max-width: 768px) {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
   Button {

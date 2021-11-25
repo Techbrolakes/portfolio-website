@@ -124,6 +124,9 @@ const ProjectDescription = styled.div`
   @media all and (min-width: 320px) and (max-width: 600px) {
     margin: 0 5px;
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    margin: 0 5px;
+  }
 `;
 const ProjectTools = styled.div`
   ul {
