@@ -29,6 +29,10 @@ const Heading = styled.div`
   h3 {
     color: rgb(100, 255, 218);
     letter-spacing: 2px;
+
+    @media all and (min-width: 601px) and (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   h1 {
@@ -40,6 +44,10 @@ const Heading = styled.div`
     @media all and (min-width: 320px) and (max-width: 600px) {
       font-size: 26px;
       text-align: center;
+    }
+    @media all and (min-width: 601px) and (max-width: 768px) {
+      text-align: center;
+      font-size: 62px;
     }
 
     span {
@@ -63,6 +71,9 @@ const Heading = styled.div`
         display: none;
       }
     }
+    @media all and (min-width: 601px) and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
   Button {
     font-family: "lato";
@@ -75,6 +86,9 @@ const Heading = styled.div`
     @media all and (min-width: 320px) and (max-width: 600px) {
       font-size: 12px;
     }
+    @media all and (min-width: 601px) and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
   Button:hover {
     color: #000;
@@ -86,6 +100,10 @@ const Heading = styled.div`
     align-items: center;
     justify-content: center;
     margin: 30px 0;
+  }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 0;
   }
 `;
 const Emoji = styled.span`

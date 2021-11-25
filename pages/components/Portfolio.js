@@ -63,6 +63,9 @@ const MiddleLayout = styled.div`
     width: 100%;
     justify-content: space-between;
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const EmailSection = styled.div`
   color: white;

@@ -56,6 +56,10 @@ const ProjectSection = styled.div`
   @media all and (min-width: 320px) and (max-width: 600px) {
     flex-direction: column;
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 const ProjectImage = styled.div`
   height: 400px;
@@ -78,6 +82,13 @@ const ProjectImage = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    background: ${(props) => `url("/${props.bgImage}")`};
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 `;
 const ProjectDetails = styled.div`
   display: flex;
@@ -93,6 +104,9 @@ const ProjectHead = styled.div`
     color: #ccd6f6;
   }
   @media all and (min-width: 320px) and (max-width: 600px) {
+    text-align: center;
+  }
+  @media all and (min-width: 601px) and (max-width: 768px) {
     text-align: center;
   }
 `;
@@ -132,6 +146,9 @@ const ProjectLinks = styled.div`
   color: #ccd6f6;
 
   @media all and (min-width: 320px) and (max-width: 600px) {
+    text-align: center;
+  }
+  @media all and (min-width: 601px) and (max-width: 768px) {
     text-align: center;
   }
 

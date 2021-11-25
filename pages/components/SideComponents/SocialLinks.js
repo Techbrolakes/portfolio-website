@@ -39,7 +39,10 @@ const Links = styled.div`
   align-items: center;
   color: #ccd6f6;
 
-  @media all and (min-width: 320px) and (max-width: 600px) {
+  @media all and (min-width: 0px) and (max-width: 600px) {
+    display: none;
+  }
+  @media all and (min-width: 601px) and (max-width: 768px) {
     display: none;
   }
 `;

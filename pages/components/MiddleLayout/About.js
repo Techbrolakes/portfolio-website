@@ -118,6 +118,10 @@ const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const AboutParagraph = styled.div`
   color: #fff;
@@ -129,6 +133,10 @@ const AboutParagraph = styled.div`
     @media all and (min-width: 320px) and (max-width: 600px) {
       font-size: 16px;
       text-align: center;
+    }
+    @media all and (min-width: 601px) and (max-width: 768px) {
+      text-align: center;
+      font-size: 18px;
     }
   }
 `;
@@ -166,6 +174,22 @@ const AboutImage = styled.div`
       z-index: -1;
     }
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+
+    ::after {
+      content: "";
+      position: absolute;
+      left: 2rem;
+      top: 1rem;
+      border: 4px solid #64ffda;
+      width: 100%;
+      height: 85%;
+      z-index: -1;
+    }
+  }
 `;
 const Line = styled.div`
   width: 400px;
@@ -186,6 +210,10 @@ const ListContainer = styled.div`
   @media all and (min-width: 320px) and (max-width: 600px) {
     font-size: 16px;
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    width: 400px;
+    margin: 0 auto;
+  }
 `;
 const ListItemsOne = styled.div`
   li {
@@ -200,6 +228,9 @@ const ListItemsOne = styled.div`
     @media all and (min-width: 320px) and (max-width: 600px) {
       width: 100px;
     }
+    @media all and (min-width: 601px) and (max-width: 768px) {
+      width: 100%;
+    }
   }
 `;
 const ListItemsTwo = styled.div`
@@ -212,6 +243,9 @@ const ListItemsTwo = styled.div`
     width: 100%;
 
     @media all and (min-width: 320px) and (max-width: 600px) {
+      width: 100%;
+    }
+    @media all and (min-width: 601px) and (max-width: 768px) {
       width: 100%;
     }
   }

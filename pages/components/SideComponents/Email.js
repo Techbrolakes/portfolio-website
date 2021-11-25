@@ -34,4 +34,7 @@ const EmailBar = styled.div`
   @media all and (min-width: 320px) and (max-width: 600px) {
     display: none;
   }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    display: none;
+  }
 `;
