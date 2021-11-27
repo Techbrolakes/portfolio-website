@@ -71,7 +71,6 @@ const ProjectImage = styled.div`
     ),
     ${(props) => `url("/${props.bgImage}")`};
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 
   @media all and (min-width: 320px) and (max-width: 600px) {

@@ -14,6 +14,45 @@ function Projects() {
         <Line></Line>
       </ProjectHeading>
       <Work
+        title="Landing-Page Design"
+        desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        desc2="when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        desc3=" It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        span1="Lorem Ipsum"
+        span2="Lekan Dar"
+        backgroundImg="modern-ui.png"
+        list1="Vs Code"
+        list2="React"
+        list3="Styled Components"
+        list4="Vercel"
+      />
+      <Work
+        title="Admin-Template"
+        desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        desc2="when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        desc3=" It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        span1="Lorem Ipsum"
+        span2="Lekan Dar"
+        backgroundImg="admin.png"
+        list1="Vs Code"
+        list2="React"
+        list3="Styled Components"
+        list4="Vercel"
+      />
+      <Work
+        title="My Portfolio Website"
+        desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        desc2="when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        desc3=" It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        span1="Lorem Ipsum"
+        span2="Lekan Dar"
+        backgroundImg="portfolio.png"
+        list1="Vs Code"
+        list2="React"
+        list3="Styled Components"
+        list4="Vercel"
+      />
+      <Work
         title="Tesla-Clone"
         desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
         desc2="when an unknown printer took a galley of type and scrambled it to make a type specimen book."
@@ -39,54 +78,16 @@ function Projects() {
         list3="Bookly Api"
         list4="Php"
       />
-      <Work
-        title="Tesla-Clone"
-        desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-        desc2="when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        desc3=" It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        span1="Lorem Ipsum"
-        span2="Lekan Dar"
-        backgroundImg="tesla.png"
-        list1="Vs Code"
-        list2="React"
-        list3="Styled Components"
-        list4="Vercel"
-      />
+
       <ProjectShowHide>
         <Work
-          title="Tesla-Clone"
+          title="Admin-Template"
           desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
           desc2="when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           desc3=" It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
           span1="Lorem Ipsum"
           span2="Lekan Dar"
-          backgroundImg="tesla.png"
-          list1="Vs Code"
-          list2="React"
-          list3="Styled Components"
-          list4="Vercel"
-        />
-        <Work
-          title="Tesla-Clone"
-          desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-          desc2="when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          desc3=" It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-          span1="Lorem Ipsum"
-          span2="Lekan Dar"
-          backgroundImg="tesla.png"
-          list1="Vs Code"
-          list2="React"
-          list3="Styled Components"
-          list4="Vercel"
-        />
-        <Work
-          title="Tesla-Clone"
-          desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-          desc2="when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          desc3=" It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-          span1="Lorem Ipsum"
-          span2="Lekan Dar"
-          backgroundImg="tesla.png"
+          backgroundImg="admin.png"
           list1="Vs Code"
           list2="React"
           list3="Styled Components"
