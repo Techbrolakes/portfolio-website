@@ -26,7 +26,7 @@ function SocialLinks() {
         </Tooltip>
 
         <Tooltip title="WhatsApp">
-          <a href="https://wa.me/07069217291?text=Hi,%20Lekan%20Dar%20I%20love%20your%20works">
+          <a href="https://wa.me/+2347069217291?text=Hi,%20Lekan%20Dar%20I%20love%20your%20works">
             <WhatsApp />
           </a>
         </Tooltip>
