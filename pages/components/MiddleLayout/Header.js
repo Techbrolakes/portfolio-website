@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -16,7 +17,9 @@ function Header() {
           interfaces & experiences <Emoji>👨‍💻</Emoji>
         </p>
         <Button variant="contained" size="large">
-          Check out my works
+          <a href="Lekandar.pdf" download>
+            Download Resume
+          </a>
         </Button>
       </Heading>
     </div>
