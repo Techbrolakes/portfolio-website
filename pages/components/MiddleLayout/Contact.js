@@ -30,17 +30,23 @@ function Contact() {
           <SocialSegment>
             <h4> Check me out on this platforms</h4>
             <IconDiv>
-              <Tooltip title="Behance">
-                <i className="lab la-behance"></i>
+              <Tooltip title="Whatsapp">
+                <a href="https://wa.me/07069217291?text=Hi,%20Lekan%20Dar%20I%20love%20your%20works">
+                  <i className="lab la-whatsapp"></i>
+                </a>
               </Tooltip>
               <Tooltip title="Github">
-                <i className="lab la-github"></i>
+                <a href="https://github.com/Lekan1">
+                  <i className="lab la-github"></i>
+                </a>
               </Tooltip>
               <Tooltip title="Dribble">
                 <i className="lab la-dribbble"></i>
               </Tooltip>
               <Tooltip title="Linkedin">
-                <i className="lab la-linkedin"></i>
+                <a href="https://www.linkedin.com/in/lekan-dar-02bb8721a/">
+                  <i className="lab la-linkedin"></i>
+                </a>
               </Tooltip>
             </IconDiv>
           </SocialSegment>

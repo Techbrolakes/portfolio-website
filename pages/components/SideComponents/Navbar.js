@@ -22,7 +22,11 @@ function Navbar() {
             <span>03.</span>
             Contact
           </li>
-          <Button variant="contained">Resume</Button>
+          <Button variant="contained">
+            <a href="Lekandar.pdf" download>
+              Resume
+            </a>
+          </Button>
         </ul>
       </Link>
     </Heading>

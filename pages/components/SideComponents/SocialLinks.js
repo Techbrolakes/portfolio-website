@@ -17,16 +17,23 @@ function SocialLinks() {
         transition={{ ease: "easeOut", duration: 10 }}
       >
         <Tooltip title="Github">
-          <GitHubIcon />
+          <a href="https://github.com/Lekan1">
+            <GitHubIcon />
+          </a>
         </Tooltip>
         <Tooltip title="Instagram">
           <Instagram />
         </Tooltip>
+
         <Tooltip title="WhatsApp">
-          <WhatsApp />
+          <a href="https://wa.me/07069217291?text=Hi,%20Lekan%20Dar%20I%20love%20your%20works">
+            <WhatsApp />
+          </a>
         </Tooltip>
         <Tooltip title="LinkedIn">
-          <LinkedIn />
+          <a href="https://www.linkedin.com/in/lekan-dar-02bb8721a/">
+            <LinkedIn />
+          </a>
         </Tooltip>
 
         <LineOne></LineOne>
