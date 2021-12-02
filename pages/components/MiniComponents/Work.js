@@ -122,6 +122,7 @@ const ProjectDescription = styled.div`
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
     margin: 0 5px;
+    width: 100%;
   }
 `;
 const ProjectTools = styled.div`

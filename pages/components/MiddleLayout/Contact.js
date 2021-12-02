@@ -22,7 +22,9 @@ function Contact() {
           </ContactInformation>
           <ContactForm>
             <Button variant="contained" size="medium">
-              Send me a direct email today
+              <a href="mailto:lekandar11@gmail.com">
+                Send me a direct email today
+              </a>
             </Button>
           </ContactForm>
           <SocialSegment>
