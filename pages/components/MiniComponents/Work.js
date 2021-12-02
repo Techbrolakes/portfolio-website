@@ -7,9 +7,6 @@ function Work({
   title,
   desc,
   desc2,
-  desc3,
-  span1,
-  span2,
   backgroundImg,
   list1,
   list2,
@@ -26,8 +23,7 @@ function Work({
         </ProjectHead>
         <ProjectDescription>
           <p>
-            {desc} <span> {span1} </span> {desc2}
-            <span> {span2}</span> {desc3}
+            {desc} <span> </span> {desc2}
           </p>
         </ProjectDescription>
         <ProjectTools>
@@ -114,7 +110,7 @@ const ProjectDescription = styled.div`
   padding: 5px 20px;
   background: #112240;
   border-radius: 10px;
-
+  width: 500px;
   p {
     text-align: center;
     color: #ccd6f6;
@@ -122,6 +118,7 @@ const ProjectDescription = styled.div`
   }
   @media all and (min-width: 320px) and (max-width: 600px) {
     margin: 0 5px;
+    width: 100%;
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
     margin: 0 5px;

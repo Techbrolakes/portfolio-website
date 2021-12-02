@@ -5,11 +5,17 @@ import WhatsApp from "@mui/icons-material/WhatsApp";
 import Instagram from "@mui/icons-material/Instagram";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import { Tooltip } from "@mui/material";
+import { motion } from "framer-motion";
 
 function SocialLinks() {
   return (
     <div>
-      <Links>
+      <Links
+        as={motion.div}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 10 }}
+      >
         <Tooltip title="Github">
           <GitHubIcon />
         </Tooltip>
