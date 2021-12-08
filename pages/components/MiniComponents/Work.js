@@ -37,7 +37,7 @@ function Work({
         </ProjectTools>
         <ProjectLinks>
           <Button variant="contained" size="medium">
-            <a href={websiteLink} target="_blank">
+            <a href={websiteLink} target="_blank" rel="noreferrer">
               Visit Website
             </a>
           </Button>
