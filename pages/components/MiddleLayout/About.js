@@ -2,6 +2,9 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import FingerprintIcon from "@mui/icons-material/Fingerprint";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+
 function About() {
   return (
     <div>
@@ -14,61 +17,66 @@ function About() {
         </AboutHeading>
 
         <AboutContent>
-          <AboutParagraph>
-            <p>
-              Hello! My name is Lekan and I enjoy
-              <span> creating and designing things </span>
-              that live on the internet. I&rsquo;m also a student of
-              <span> Geology</span> at the
-              <span> University of Lagos, Nigeria.</span>
-            </p>
-            <p>
-              I have experience working remotely building
-              <span> meaningful and productive software </span> with also the
-              ability to work with minimal supervision as I have the zeal to
-              tackle any problems I might encounter independently to achieve the
-              desired result.
-            </p>
-            <p>
-              Here are a few <span>technologies</span> I&rsquo;ve been working
-              with recently:
-            </p>
-            <ListContainer>
-              <ListItemsOne>
-                <ul>
-                  <li>
-                    <FingerprintIcon /> Javascript
-                  </li>
-                  <li>
-                    <FingerprintIcon />
-                    Node Js
-                  </li>
-                  <li>
-                    <FingerprintIcon />
-                    Webflow
-                  </li>
-                </ul>
-              </ListItemsOne>
-              <ListItemsTwo>
-                <ul>
-                  <li>
-                    <FingerprintIcon />
-                    React
-                  </li>
-                  <li>
-                    <FingerprintIcon />
-                    Vue Js
-                  </li>
-                  <li>
-                    <FingerprintIcon />
-                    Figma
-                  </li>
-                </ul>
-              </ListItemsTwo>
-            </ListContainer>
-          </AboutParagraph>
+          <Fade>
+            <AboutParagraph>
+              <p>
+                Hello! My name is Lekan and I enjoy
+                <span> creating and designing things </span>
+                that live on the internet. I&rsquo;m also a student of
+                <span> Geology</span> at the
+                <span> University of Lagos, Nigeria.</span>
+              </p>
+              <p>
+                I have experience working remotely building
+                <span> meaningful and productive software </span> with also the
+                ability to work with minimal supervision as I have the zeal to
+                tackle any problems I might encounter independently to achieve
+                the desired result.
+              </p>
+              <p>
+                Here are a few <span>technologies</span> I&rsquo;ve been working
+                with recently:
+              </p>
+              <ListContainer>
+                <ListItemsOne>
+                  <ul>
+                    <li>
+                      <FingerprintIcon /> Javascript
+                    </li>
+                    <li>
+                      <FingerprintIcon />
+                      Node Js
+                    </li>
+                    <li>
+                      <FingerprintIcon />
+                      Webflow
+                    </li>
+                  </ul>
+                </ListItemsOne>
+                <ListItemsTwo>
+                  <ul>
+                    <li>
+                      <FingerprintIcon />
+                      React
+                    </li>
+                    <li>
+                      <FingerprintIcon />
+                      Vue Js
+                    </li>
+                    <li>
+                      <FingerprintIcon />
+                      Figma
+                    </li>
+                  </ul>
+                </ListItemsTwo>
+              </ListContainer>
+            </AboutParagraph>
+          </Fade>
+
           <AboutImage>
-            <Image src="/lekan2.jpg" width={1200} height={1400} alt="Lekan" />
+            <Fade right>
+              <Image src="/lekan2.jpg" width={1200} height={1400} alt="Lekan" />
+            </Fade>
           </AboutImage>
         </AboutContent>
       </AboutContainer>
@@ -148,18 +156,28 @@ const AboutImage = styled.div`
   margin: 0 50px;
   object-fit: cover;
   opacity: 0.99;
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.17s;
   position: relative;
   display: inline-block;
 
-  ::after {
+  ::before {
     content: "";
     position: absolute;
-    left: 3rem;
+    left: 0.09rem;
     top: 1rem;
     border: 4px solid #64ffda;
     width: 100%;
-    height: 80%;
+    height: 85%;
+    z-index: -1;
+  }
+  ::after {
+    content: "";
+    position: absolute;
+    left: 0.6rem;
+    top: 2rem;
+    border: 4px solid #64ffda;
+    width: 100%;
+    height: 90%;
     z-index: -1;
   }
   @media all and (min-width: 320px) and (max-width: 600px) {

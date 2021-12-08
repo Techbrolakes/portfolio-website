@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 function Email() {
   return (
     <EmailBar>
-      <h3>Lekandar11@gmail.com</h3>
-      <Line></Line>
+      <Fade left>
+        <h3>Lekandar11@gmail.com</h3>
+        <Line></Line>
+      </Fade>
     </EmailBar>
   );
 }

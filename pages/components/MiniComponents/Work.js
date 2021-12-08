@@ -80,12 +80,21 @@ const ProjectImage = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
   }
-  @media all and (min-width: 601px) and (max-width: 768px) {
+  @media all and (min-width: 601px) and (max-width: 767px) {
+    height: 400px;
     background: ${(props) => `url("/${props.bgImage}")`};
     background-position: center;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    background: ${(props) => `url("/${props.bgImage}")`};
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
   }
 `;
 const ProjectDetails = styled.div`
@@ -147,6 +156,11 @@ const ProjectTools = styled.div`
 const ProjectLinks = styled.div`
   text-align: right;
   color: #ccd6f6;
+
+  Button {
+    color: #fff;
+    background: #09192f;
+  }
 
   @media all and (min-width: 320px) and (max-width: 600px) {
     text-align: center;

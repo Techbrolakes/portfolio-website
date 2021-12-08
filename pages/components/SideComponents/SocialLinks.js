@@ -6,38 +6,41 @@ import Instagram from "@mui/icons-material/Instagram";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import { Tooltip } from "@mui/material";
 import { motion } from "framer-motion";
+import Fade from "react-reveal/Fade";
 
 function SocialLinks() {
   return (
     <div>
-      <Links
-        as={motion.div}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 10 }}
-      >
-        <Tooltip title="Github">
-          <a href="https://github.com/Lekan1">
-            <GitHubIcon />
-          </a>
-        </Tooltip>
-        <Tooltip title="Instagram">
-          <Instagram />
-        </Tooltip>
+      <Fade top>
+        <Links
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
+          <Tooltip title="Github">
+            <a href="https://github.com/Lekan1">
+              <GitHubIcon />
+            </a>
+          </Tooltip>
+          <Tooltip title="Instagram">
+            <Instagram />
+          </Tooltip>
 
-        <Tooltip title="WhatsApp">
-          <a href="https://wa.me/+2347069217291?text=Hi,%20Lekan%20Dar%20I%20love%20your%20works">
-            <WhatsApp />
-          </a>
-        </Tooltip>
-        <Tooltip title="LinkedIn">
-          <a href="https://www.linkedin.com/in/lekan-dar-02bb8721a/">
-            <LinkedIn />
-          </a>
-        </Tooltip>
+          <Tooltip title="WhatsApp">
+            <a href="https://wa.me/+2347069217291?text=Hi,%20Lekan%20Dar%20I%20love%20your%20works">
+              <WhatsApp />
+            </a>
+          </Tooltip>
+          <Tooltip title="LinkedIn">
+            <a href="https://www.linkedin.com/in/lekan-dar-02bb8721a/">
+              <LinkedIn />
+            </a>
+          </Tooltip>
 
-        <LineOne></LineOne>
-      </Links>
+          <LineOne></LineOne>
+        </Links>
+      </Fade>
     </div>
   );
 }

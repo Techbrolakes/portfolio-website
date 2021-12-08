@@ -7,30 +7,30 @@ import Fade from "react-reveal/Fade";
 function Navbar() {
   return (
     <Heading>
-      <Fade right>
+      <Fade bottom>
         <Image src="/ld4.svg" width={200} height={200} alt="Logo" />
+        <Link>
+          <ul>
+            <li>
+              <span>01.</span>
+              Home
+            </li>
+            <li>
+              <span>02.</span>
+              Work
+            </li>
+            <li>
+              <span>03.</span>
+              Contact
+            </li>
+            <Button variant="contained">
+              <a href="Lekandar.pdf" download>
+                Resume
+              </a>
+            </Button>
+          </ul>
+        </Link>
       </Fade>
-      <Link>
-        <ul>
-          <li>
-            <span>01.</span>
-            Home
-          </li>
-          <li>
-            <span>02.</span>
-            Work
-          </li>
-          <li>
-            <span>03.</span>
-            Contact
-          </li>
-          <Button variant="contained">
-            <a href="Lekandar.pdf" download>
-              Resume
-            </a>
-          </Button>
-        </ul>
-      </Link>
     </Heading>
   );
 }
