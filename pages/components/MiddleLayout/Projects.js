@@ -22,6 +22,7 @@ function Projects() {
         list2="JQuery"
         list3="Bookly Api"
         list4="Php"
+        websiteLink="https://boi-unilag.com"
       />
 
       <Work
@@ -33,6 +34,7 @@ function Projects() {
         list2="React"
         list3="Styled Components"
         list4="Vercel"
+        websiteLink="https://modern-ui-ux.vercel.app/"
       />
       <Work
         title="My Portfolio Website"
@@ -43,6 +45,7 @@ function Projects() {
         list2="React"
         list3="Styled Components"
         list4="Vercel"
+        websiteLink="https://lekandar.vercel.app/"
       />
       <Work
         title="Admin-Template"
@@ -53,6 +56,7 @@ function Projects() {
         list2="React"
         list3="Styled Components"
         list4="Vercel"
+        websiteLink="https://react-admindashboard.vercel.app/"
       />
       <Work
         title="Tesla-Clone"
@@ -63,6 +67,7 @@ function Projects() {
         list2="React"
         list3="Styled Components"
         list4="Vercel"
+        websiteLink="https://tesla-design.vercel.app/"
       />
       <ProjectShowHide>
         <Work

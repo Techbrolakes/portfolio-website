@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import Button from "@mui/material/Button";
 import LanguageIcon from "@mui/icons-material/Language";
 
 function Work({
@@ -12,6 +12,7 @@ function Work({
   list2,
   list3,
   list4,
+  websiteLink,
 }) {
   return (
     <ProjectSection>
@@ -35,9 +36,11 @@ function Work({
           </ul>
         </ProjectTools>
         <ProjectLinks>
-          <GitHubIcon />
-          <span></span>
-          <LanguageIcon />
+          <Button variant="contained" size="medium">
+            <a href={websiteLink} target="_blank">
+              Visit Website
+            </a>
+          </Button>
         </ProjectLinks>
       </ProjectDetails>
     </ProjectSection>
@@ -58,7 +61,6 @@ const ProjectSection = styled.div`
   }
 `;
 const ProjectImage = styled.div`
-  height: 400px;
   width: 4000px;
   background: linear-gradient(
       0deg,
@@ -67,6 +69,7 @@ const ProjectImage = styled.div`
     ),
     ${(props) => `url("/${props.bgImage}")`};
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 
   @media all and (min-width: 320px) and (max-width: 600px) {

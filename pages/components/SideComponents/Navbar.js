@@ -3,11 +3,13 @@ import Image from "next/image";
 import styled from "styled-components";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
-
+import Fade from "react-reveal/Fade";
 function Navbar() {
   return (
     <Heading>
-      <Image src="/ld4.svg" width={200} height={200} alt="Logo" />
+      <Fade right>
+        <Image src="/ld4.svg" width={200} height={200} alt="Logo" />
+      </Fade>
       <Link>
         <ul>
           <li>

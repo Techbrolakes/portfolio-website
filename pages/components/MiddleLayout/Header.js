@@ -1,26 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
-import Link from "next/link";
+import Fade from "react-reveal/Fade";
 
 function Header() {
   return (
     <div>
       <Heading>
         <h3>Hi, my name is</h3>
-        <h1>
-          Lekan Dar <br /> <span>I build things for the web.</span>
-        </h1>
-        <p>
-          I&rsquo;m a design-minded <span>Front-End Software Engineer</span> &
-          <span> Product Designer</span> <br /> focused on building beautiful
-          interfaces & experiences <Emoji>👨‍💻</Emoji>
-        </p>
-        <Button variant="contained" size="large">
-          <a href="Lekandar.pdf" download>
-            Download Resume
-          </a>
-        </Button>
+        <Fade left>
+          <h1>
+            Lekan Dar <br /> <span>I build things for the web.</span>
+          </h1>
+        </Fade>
+        <Fade right>
+          <p>
+            I&rsquo;m a design-minded <span>Front-End Software Engineer</span> &
+            <span> Product Designer</span> <br /> focused on building beautiful
+            interfaces & experiences <Emoji>👨‍💻</Emoji>
+          </p>
+        </Fade>
+
+        <Fade bottom>
+          <Button variant="contained" size="large">
+            <a href="Lekandar.pdf" download>
+              Download Resume
+            </a>
+          </Button>
+        </Fade>
       </Heading>
     </div>
   );

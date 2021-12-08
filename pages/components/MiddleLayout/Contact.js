@@ -104,6 +104,10 @@ const ContactInformation = styled.div`
   flex: 1;
   color: #ccd6f6;
   text-align: center;
+
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const ContactForm = styled.div`
   flex: 1;
