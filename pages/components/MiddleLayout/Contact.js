@@ -105,6 +105,11 @@ const ContactInformation = styled.div`
   color: #ccd6f6;
   text-align: center;
 
+  h4 {
+    @media all and (min-width: 601px) and (max-width: 768px) {
+      width: 100%;
+    }
+  }
   @media all and (min-width: 601px) and (max-width: 768px) {
     width: 100%;
   }
