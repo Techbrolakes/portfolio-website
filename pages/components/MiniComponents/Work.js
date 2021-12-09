@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
-import LanguageIcon from "@mui/icons-material/Language";
+import Fade from "react-reveal/Fade";
 
 function Work({
   title,
@@ -17,32 +17,34 @@ function Work({
   return (
     <ProjectSection>
       <ProjectImage bgImage={backgroundImg}></ProjectImage>
-      <ProjectDetails>
-        <ProjectHead>
-          <h3>Featured Project</h3>
-          <h1>{title}</h1>
-        </ProjectHead>
-        <ProjectDescription>
-          <p>
-            {desc} <span> </span> {desc2}
-          </p>
-        </ProjectDescription>
-        <ProjectTools>
-          <ul>
-            <li>{list1}</li>
-            <li>{list2}</li>
-            <li>{list3}</li>
-            <li>{list4}</li>
-          </ul>
-        </ProjectTools>
-        <ProjectLinks>
-          <Button variant="contained" size="medium">
-            <a href={websiteLink} target="_blank" rel="noreferrer">
-              Visit Website
-            </a>
-          </Button>
-        </ProjectLinks>
-      </ProjectDetails>
+      <Fade>
+        <ProjectDetails>
+          <ProjectHead>
+            <h3>Featured Project</h3>
+            <h1>{title}</h1>
+          </ProjectHead>
+          <ProjectDescription>
+            <p>
+              {desc} <span> </span> {desc2}
+            </p>
+          </ProjectDescription>
+          <ProjectTools>
+            <ul>
+              <li>{list1}</li>
+              <li>{list2}</li>
+              <li>{list3}</li>
+              <li>{list4}</li>
+            </ul>
+          </ProjectTools>
+          <ProjectLinks>
+            <Button variant="contained" size="medium">
+              <a href={websiteLink} target="_blank" rel="noreferrer">
+                Visit Website
+              </a>
+            </Button>
+          </ProjectLinks>
+        </ProjectDetails>
+      </Fade>
     </ProjectSection>
   );
 }

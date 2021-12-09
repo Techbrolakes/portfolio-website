@@ -3,7 +3,6 @@ import Image from "next/image";
 import styled from "styled-components";
 import FingerprintIcon from "@mui/icons-material/Fingerprint";
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
 
 function About() {
   return (
