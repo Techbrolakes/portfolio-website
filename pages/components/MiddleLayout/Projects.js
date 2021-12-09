@@ -34,7 +34,18 @@ function Projects() {
         list2="React"
         list3="Styled Components"
         list4="Vercel"
-        websiteLink="https://modern-ui-ux.vercel.app/"
+        websiteLink="https://modern-ui-ux.vercel.app/ "
+      />
+      <Work
+        title="Netflix-Clone"
+        desc="This Website was built in a bid to clone the official"
+        desc2="Netflix Homepage , Just wanted to my frontend skills and i love the way the website came out"
+        backgroundImg="netflix2.png"
+        list1="VS CODE"
+        list2="HTML"
+        list3="CSS"
+        list4="JAVASCRIPT"
+        websiteLink="https://netflix-indol.vercel.app/"
       />
       <Work
         title="My Portfolio Website"
@@ -57,17 +68,6 @@ function Projects() {
         list3="Styled Components"
         list4="Vercel"
         websiteLink="https://react-admindashboard.vercel.app/"
-      />
-      <Work
-        title="Tesla-Clone"
-        desc="This Website was built in a bid to clone the official"
-        desc2="Tesla Homepage , Just wanted to my frontend skills and i love the way the website came out"
-        backgroundImg="tesla.png"
-        list1="Vs Code"
-        list2="React"
-        list3="Styled Components"
-        list4="Vercel"
-        websiteLink="https://tesla-design.vercel.app/"
       />
       <ProjectShowHide>
         <Work
