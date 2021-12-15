@@ -105,11 +105,11 @@ function Projects() {
           list4="Vercel"
         />
       </ProjectShowHide>
-      <ProjectButton>
+      {/* <ProjectButton>
         <Button variant="contained" size="large">
           Show More
         </Button>
-      </ProjectButton>
+      </ProjectButton> */}
     </ProjectContainer>
   );
 }
