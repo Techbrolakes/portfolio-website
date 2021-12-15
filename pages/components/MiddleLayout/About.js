@@ -48,7 +48,7 @@ function About() {
                     </li>
                     <li>
                       <FingerprintIcon />
-                      Webflow
+                      PHP
                     </li>
                   </ul>
                 </ListItemsOne>
@@ -56,7 +56,7 @@ function About() {
                   <ul>
                     <li>
                       <FingerprintIcon />
-                      React
+                      React JS
                     </li>
                     <li>
                       <FingerprintIcon />
