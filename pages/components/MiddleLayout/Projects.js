@@ -26,6 +26,17 @@ function Projects() {
       />
 
       <Work
+        title="Movie Website"
+        desc="A react application which fetches data from a movie Api and dynamically renders the data in a responsive and beautiful web UI"
+        desc2=""
+        backgroundImg="movie.png"
+        list1="Vs Code"
+        list2="React"
+        list3="Typescript"
+        list4="The Movie DB"
+        websiteLink="https://competent-fermi-0457c4.netlify.app/"
+      />
+      <Work
         title="Landing-Page Design"
         desc="A simple website built designed on figma and then translated into code"
         desc2="The website was designed with the latest design principles"
@@ -58,6 +69,18 @@ function Projects() {
         list4="Vercel"
         websiteLink="https://lekandar.vercel.app/"
       />
+
+      <Work
+        title="Lakeside GameApp"
+        desc="A react application which fetches data from a Game Api and dynamically renders the best free games easily available for download on pc in a responsive and beautiful web UI"
+        desc2=""
+        backgroundImg="game.png"
+        list1="Vs Code"
+        list2="React"
+        list3="Vercel"
+        list4="Redux"
+        websiteLink="#"
+      />
       <Work
         title="Admin-Template"
         desc="An admin Template which can be configured to work with a full mern-stack application"
@@ -69,6 +92,7 @@ function Projects() {
         list4="Vercel"
         websiteLink="https://react-admindashboard.vercel.app/"
       />
+
       <ProjectShowHide>
         <Work
           title="Admin-Template"
