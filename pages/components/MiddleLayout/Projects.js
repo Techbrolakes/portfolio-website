@@ -92,6 +92,28 @@ function Projects() {
         list4="Vercel"
         websiteLink="https://react-admindashboard.vercel.app/"
       />
+      <Work
+        title="Defi Crypto Landing-Page"
+        desc="A simple crypto themed website which feeds in live data from the Coin Gecki Api"
+        desc2=""
+        backgroundImg="defi.png"
+        list1="Vs Code"
+        list2="React"
+        list3="Coin Gecki Api"
+        list4="Vercel"
+        websiteLink="https://crypto-sooty.vercel.app/"
+      />
+      <Work
+        title="Project XQuisite Meals"
+        desc="This is my first ever website, It is a website for an imaginary restaurant named XQUISITE MEALS. The website is a mern stack build, with react at the client side and node js at the server side, with MongoDb as it's database"
+        desc2=""
+        backgroundImg="xq.png"
+        list1="Vs Code"
+        list2="React"
+        list3="Node js"
+        list4="MongoDb"
+        websiteLink="https://warm-garden-57192.herokuapp.com/"
+      />
 
       <ProjectShowHide>
         <Work
