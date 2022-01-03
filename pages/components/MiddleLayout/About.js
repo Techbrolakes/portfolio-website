@@ -73,9 +73,7 @@ function About() {
           </Fade>
 
           <AboutImage>
-            <Fade right>
-              <Image src="/lekan2.jpg" width={1200} height={1400} alt="Lekan" />
-            </Fade>
+            <Image src="/lekan2.jpg" width={1200} height={1400} alt="Lekan" />
           </AboutImage>
         </AboutContent>
       </AboutContainer>
