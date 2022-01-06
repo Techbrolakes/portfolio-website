@@ -22,13 +22,12 @@ const Line = styled.div`
 `;
 const EmailBar = styled.div`
   position: fixed;
-  bottom: 0;
-  left: 1100px;
+  bottom: 130px;
+  z-index: 2;
+  right: -10%;
   display: flex;
   color: #ccd6f6;
   align-items: center;
-  justify-content: space-between;
-  height: 50vh;
   transform: rotate(90deg);
 
   h3 {

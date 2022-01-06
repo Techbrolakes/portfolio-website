@@ -10,7 +10,7 @@ import Footer from "./MiddleLayout/Footer";
 
 function Portfolio() {
   return (
-    <HeroSection>
+    <WebsiteLayout>
       {/* SOCIAL-LINKS */}
       <Container>
         <SocialLinks />
@@ -34,13 +34,13 @@ function Portfolio() {
         <Email />
       </EmailSection>
       {/* EMAIL-SECTION */}
-    </HeroSection>
+    </WebsiteLayout>
   );
 }
 
 export default Portfolio;
 
-const HeroSection = styled.div`
+const WebsiteLayout = styled.div`
   position: relative;
 `;
 const Container = styled.div`
@@ -59,7 +59,8 @@ const MiddleLayout = styled.div`
   justify-content: space-between;
   width: 1050px;
   height: 680vh;
-  @media all and (min-width: 320px) and (max-width: 600px) {
+
+  @media all and (min-width: 1px) and (max-width: 600px) {
     width: 100%;
     justify-content: space-between;
   }
