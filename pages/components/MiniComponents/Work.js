@@ -52,10 +52,11 @@ function Work({
 export default Work;
 const ProjectSection = styled.div`
   display: flex;
-  padding: 30px 15px;
+  padding: 50px 25px;
 
   @media all and (min-width: 320px) and (max-width: 600px) {
     flex-direction: column;
+    padding: 40px 20px;
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
     flex-direction: column;
@@ -133,6 +134,8 @@ const ProjectDescription = styled.div`
   @media all and (min-width: 320px) and (max-width: 600px) {
     margin: 0 5px;
     width: 100%;
+    font-size: 14px;
+    padding: 16px;
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
     margin: 0 5px;

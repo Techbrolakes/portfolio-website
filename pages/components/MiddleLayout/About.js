@@ -85,13 +85,14 @@ export default About;
 
 const AboutContainer = styled.div`
   color: #fff;
-  padding: 1rem 3rem;
+  padding: 0.2rem 3rem;
   font-family: "lato";
+  padding: 2rem;
   span {
     color: rgb(100, 255, 218);
   }
   @media all and (min-width: 320px) and (max-width: 600px) {
-    padding: 10px;
+    padding: 2rem 1rem;
     margin: 30px 0;
   }
 `;
@@ -123,6 +124,7 @@ const AboutHeading = styled.div`
 const AboutContent = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 2rem 0.2rem;
   @media all and (min-width: 320px) and (max-width: 600px) {
     display: flex;
     flex-direction: column;
@@ -139,6 +141,7 @@ const AboutParagraph = styled.div`
     color: #8892b0;
     font-size: 20px;
     line-height: 26px;
+
     @media all and (min-width: 320px) and (max-width: 600px) {
       font-size: 16px;
       text-align: center;

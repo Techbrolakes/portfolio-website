@@ -18,15 +18,13 @@ function Portfolio() {
       {/* SOCIAL-LINKS */}
 
       {/* MIDDLE SECTION */}
-      <MiddleSection>
-        <MiddleLayout>
-          <Header />
-          <About />
-          <Projects />
-          <Contact />
-          <Footer />
-        </MiddleLayout>
-      </MiddleSection>
+      <MiddleLayout>
+        <Header />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </MiddleLayout>
       {/* MIDDLE SECTION */}
 
       {/* EMAIL-SECTION */}
@@ -41,28 +39,21 @@ function Portfolio() {
 export default Portfolio;
 
 const WebsiteLayout = styled.div`
-  position: relative;
+  display: flex;
+  cursor: pointer;
 `;
 const Container = styled.div`
   position: fixed;
   bottom: 0;
   color: white;
 `;
-const MiddleSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+
 const MiddleLayout = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 1050px;
-  height: 680vh;
+  width: 80%;
+  margin: 0 auto;
 
   @media all and (min-width: 1px) and (max-width: 600px) {
     width: 100%;
-    justify-content: space-between;
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
     width: 100%;

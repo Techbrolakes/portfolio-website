@@ -13,5 +13,6 @@ export default Footer;
 
 const FooterSection = styled.div`
   color: #ccd6f6;
+  padding: 16px;
   text-align: center;
 `;

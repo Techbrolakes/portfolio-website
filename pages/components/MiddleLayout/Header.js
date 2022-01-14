@@ -15,9 +15,9 @@ function Header() {
         </Fade>
         <Fade right>
           <p>
-            I&rsquo;m a design-minded <span>Front-End Software Engineer</span> &
-            <span> Product Designer</span> <br /> focused on building beautiful
-            interfaces & experiences <Emoji>👨‍💻</Emoji>
+            I&rsquo;m a design-minded <span>Full Stack Developer </span>&
+            <span> a Budding Ui/Ux Designer</span> <br /> focused on building
+            beautiful interfaces & experiences <Emoji>👨‍💻</Emoji>
           </p>
         </Fade>
 
@@ -36,6 +36,11 @@ function Header() {
 export default Header;
 
 const Heading = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   h3 {
     color: rgb(100, 255, 218);
     letter-spacing: 2px;
@@ -114,10 +119,14 @@ const Heading = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px 0;
+    margin: 60px 0 0 0;
+    padding: 25px 1px;
+    height: 45vh;
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
     text-align: center;
+    padding: 25px 1px;
+    height: 45vh;
     margin-bottom: 0;
   }
 `;

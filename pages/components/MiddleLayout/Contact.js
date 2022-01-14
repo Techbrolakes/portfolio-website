@@ -59,6 +59,7 @@ function Contact() {
 export default Contact;
 
 const ContactBox = styled.div`
+  padding: 20px;
   @media all and (min-width: 320px) and (max-width: 600px) {
     margin-top: 60px;
   }
