@@ -3,6 +3,12 @@ import Image from "next/image";
 import styled from "styled-components";
 import FingerprintIcon from "@mui/icons-material/Fingerprint";
 import Fade from "react-reveal/Fade";
+import { FaFigma } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaVuejs } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { DiJavascript1 } from "react-icons/di";
 
 function About() {
   return (
@@ -40,31 +46,31 @@ function About() {
                 <ListItemsOne>
                   <ul>
                     <li>
-                      <FingerprintIcon /> Javascript
+                      <DiJavascript1 /> Javascript
                     </li>
                     <li>
-                      <FingerprintIcon />
+                      <FaNode />
                       Node Js
                     </li>
                     <li>
-                      <FingerprintIcon />
-                      PHP
+                      <FaReact />
+                      React JS
                     </li>
                   </ul>
                 </ListItemsOne>
                 <ListItemsTwo>
                   <ul>
                     <li>
-                      <FingerprintIcon />
-                      React JS
+                      <FaFigma />
+                      Figma
                     </li>
                     <li>
-                      <FingerprintIcon />
+                      <FaVuejs />
                       Vue Js
                     </li>
                     <li>
-                      <FingerprintIcon />
-                      Figma
+                      <FaPhp />
+                      PHP
                     </li>
                   </ul>
                 </ListItemsTwo>
