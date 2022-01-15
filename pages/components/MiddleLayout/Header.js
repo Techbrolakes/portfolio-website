@@ -48,6 +48,9 @@ const Heading = styled.div`
     @media all and (min-width: 601px) and (max-width: 768px) {
       font-size: 32px;
     }
+    @media all and (min-width: 769px) and (max-width: 1180px) {
+      font-size: 32px;
+    }
   }
 
   h1 {
@@ -65,6 +68,11 @@ const Heading = styled.div`
       font-size: 52px;
       width: 100%;
     }
+    @media all and (min-width: 769px) and (max-width: 1180px) {
+      text-align: center;
+      font-size: 52px;
+      width: 100%;
+    }    }
 
     span {
       color: #8892b0;
@@ -125,7 +133,13 @@ const Heading = styled.div`
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
     text-align: center;
-    padding: 25px 1px;
+    padding: 42px 1px;
+    height: 45vh;
+    margin-bottom: 0;
+  }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
+    text-align: center;
+    padding: 40px 1px;
     height: 45vh;
     margin-bottom: 0;
   }

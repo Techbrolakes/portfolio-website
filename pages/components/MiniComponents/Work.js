@@ -62,6 +62,10 @@ const ProjectSection = styled.div`
     flex-direction: column;
     text-align: center;
   }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 const ProjectImage = styled.div`
   width: 4000px;
@@ -99,6 +103,14 @@ const ProjectImage = styled.div`
     background-repeat: no-repeat;
     height: 400px;
   }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
+    background: ${(props) => `url("/${props.bgImage}")`};
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
 `;
 const ProjectDetails = styled.div`
   display: flex;
@@ -117,6 +129,9 @@ const ProjectHead = styled.div`
     text-align: center;
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
+    text-align: center;
+  }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
     text-align: center;
   }
 `;
@@ -138,6 +153,10 @@ const ProjectDescription = styled.div`
     padding: 16px;
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
+    margin: 0 5px;
+    width: 100%;
+  }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
     margin: 0 5px;
     width: 100%;
   }
@@ -171,6 +190,9 @@ const ProjectLinks = styled.div`
     text-align: center;
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
+    text-align: center;
+  }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
     text-align: center;
   }
 

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Button } from "@mui/material";
 import Fade from "react-reveal/Fade";
-import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "../../../styles/Navbar.module.css";
 
 function Navbar() {
@@ -70,7 +69,7 @@ const Heading = styled.div`
   left: 0;
   z-index: 1;
   width: 99%;
-  height: 90px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,6 +80,16 @@ const Heading = styled.div`
     padding: 0;
     justify-content: center;
     width: 95%;
+  }
+  @media all and (min-width: 601px) and (max-width: 768px) {
+    padding: 0;
+    justify-content: center;
+    width: 90%;
+  }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
+    padding: 0;
+    justify-content: center;
+    width: 90%;
   }
   Button {
     font-family: "lato";
@@ -94,7 +103,10 @@ const Heading = styled.div`
       font-size: 12px;
     }
     @media all and (min-width: 601px) and (max-width: 768px) {
-      font-size: 24px;
+      font-size: 16px;
+    }
+    @media all and (min-width: 769px) and (max-width: 1180px) {
+      font-size: 14px;
     }
   }
   Button:hover {

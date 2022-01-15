@@ -150,10 +150,16 @@ const ProjectHeading = styled.div`
     margin-right: 20px;
 
     @media all and (min-width: 320px) and (max-width: 600px) {
-      font-size: 20px;
+      font-size: 14px;
       justify-content: center;
     }
     @media all and (min-width: 601px) and (max-width: 768px) {
+      font-size: 16px;
+      justify-content: center;
+    }
+    @media all and (min-width: 769px) and (max-width: 1180px) {
+      font-size: 18px;
+      justify-content: center;
     }
   }
   span {
@@ -168,6 +174,10 @@ const ProjectHeading = styled.div`
     flex-direction: column;
     justify-content: center;
   }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 const Line = styled.div`
   width: 400px;
@@ -178,6 +188,10 @@ const Line = styled.div`
     border-bottom: 2px groove rgb(100, 255, 218);
   }
   @media all and (min-width: 601px) and (max-width: 768px) {
+    width: 90px;
+    border-bottom: 2px groove rgb(100, 255, 218);
+  }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
     width: 90px;
     border-bottom: 2px groove rgb(100, 255, 218);
   }

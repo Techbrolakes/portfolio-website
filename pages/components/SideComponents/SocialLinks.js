@@ -61,6 +61,9 @@ const Links = styled.div`
   @media all and (min-width: 601px) and (max-width: 768px) {
     display: none;
   }
+  @media all and (min-width: 769px) and (max-width: 1180px) {
+    display: none;
+  }
 `;
 
 const LineOne = styled.div`
