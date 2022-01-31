@@ -23,7 +23,7 @@ function Header() {
 
         <Fade bottom>
           <Button variant="contained" size="large">
-            <a href="Lekandar.pdf" download>
+            <a href="Lekan.pdf" download>
               Download Resume
             </a>
           </Button>
